@@ -27,10 +27,10 @@ const ActionSheetItem: React.FC<Props> = ({ label, style, onPress }) => {
   return (
     <TouchableHighlight
       underlayColor={"#FFFFFF"}
-      style={[styles.wrapper, viewStyles]}
+      style={[styles.wrapper, viewStyles, { textAlign: "center" }]}
       onPress={onPress}
     >
-      <Text style={{ ...styles.label, ...textStyles }}>{label}</Text>
+      <Text style={[styles.label, textStyles]}>{label}</Text>
     </TouchableHighlight>
   );
 };
